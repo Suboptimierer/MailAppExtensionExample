@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="20037" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="20037"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ComposeSessionViewController" customModule="AttachmentReminder" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="mV2-FQ-pFt" id="jO4-D6-ru7"/>
+                <outlet property="titleDescription" destination="Dpp-c4-aXu" id="O2K-Pd-CPX"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="280" height="143"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <stackView distribution="fill" orientation="vertical" alignment="centerX" spacing="10" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a4Q-pU-BP6">
+                    <rect key="frame" x="30" y="30" width="220" height="83"/>
+                    <subviews>
+                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mV2-FQ-pFt">
+                            <rect key="frame" x="85" y="33" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="Ktg-RW-Kob"/>
+                                <constraint firstAttribute="height" constant="50" id="fiz-YX-o5J"/>
+                            </constraints>
+                            <imageCell key="cell" controlSize="large" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" id="COm-9y-n9h"/>
+                        </imageView>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Dpp-c4-aXu">
+                            <rect key="frame" x="83" y="0.0" width="54" height="23"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" id="tFu-ef-cZ6">
+                                <font key="font" metaFont="system" size="20"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                    </subviews>
+                    <visibilityPriorities>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                    </visibilityPriorities>
+                    <customSpacing>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                    </customSpacing>
+                </stackView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="a4Q-pU-BP6" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="30" id="6je-d2-Ife"/>
+                <constraint firstItem="a4Q-pU-BP6" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="30" id="ToH-cP-rOs"/>
+                <constraint firstAttribute="bottom" secondItem="a4Q-pU-BP6" secondAttribute="bottom" constant="30" id="ub6-tg-TyG"/>
+                <constraint firstAttribute="trailing" secondItem="a4Q-pU-BP6" secondAttribute="trailing" constant="30" id="va3-BV-BBJ"/>
+            </constraints>
+            <point key="canvasLocation" x="39" y="134.5"/>
+        </customView>
+        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="XER-io-rjz">
+            <rect key="frame" x="0.0" y="0.0" width="37" height="16"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="GrB-TO-abq">
+                <font key="font" usesAppearanceFont="YES"/>
+                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+            </textFieldCell>
+            <point key="canvasLocation" x="139" y="-74"/>
+        </textField>
+    </objects>
+</document>
